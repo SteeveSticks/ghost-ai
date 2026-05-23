@@ -8,7 +8,7 @@ Update this file whenever the current phase, active feature, or implementation s
 
 ## Current Goal
 
-- Hand off to the next feature unit (TBD per `context/feature-spec/`).
+- Implement editor chrome components from `context/feature-spec/02-editor.md`.
 
 ## Completed
 
@@ -23,11 +23,15 @@ Update this file whenever the current phase, active feature, or implementation s
 
 ## In Progress
 
-- None.
+- 02-editor:
+  - `component/editor/editor-navbar.tsx`
+  - `component/editor/project-sidebar.tsx`
+  - `component/editor/dialog-pattern.tsx`
+  - `app/page.tsx` integration for preview and validation
 
 ## Next Up
 
-- Select the next feature unit from `context/feature-spec/`.
+- Validate compile and lint, then continue with the next feature unit.
 
 ## Open Questions
 
