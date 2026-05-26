@@ -29,6 +29,7 @@ export function ProjectSidebar({
         aria-hidden={!isOpen}
       />
       <aside
+        aria-hidden={!isOpen}
         className={`fixed left-0 top-0 z-40 flex h-full w-[min(22rem,100vw)] flex-col border-r border-border bg-card shadow-2xl shadow-black/40 transition-transform duration-300 ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         }`}
