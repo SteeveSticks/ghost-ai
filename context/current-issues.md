@@ -3,7 +3,7 @@ When i clicked the logout button the following error appears:
 # The error
 
 # If there's another error write
-Sometimes when we login we get redirected to this werid long URL which doesn't show anything on the page.
+Sometimes when we login we get redirected to this weird long URL which doesn't show anything on the page.
 # And paste the url.
 
 # The prompt to write to the model

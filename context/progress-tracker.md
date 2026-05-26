@@ -32,7 +32,7 @@ Update this file whenever the current phase, active feature, or implementation s
 - 03-auth:
   - `proxy.ts` at project root using Clerk's `clerkMiddleware`.
   - `ClerkProvider` wraps root layout with `@clerk/ui/themes` `dark` theme and CSS-variable appearance overrides.
-  - `app/sign-in/[[...sign-in]]/page.tsx` and `app/sign-up/[[...sign-up]]/page.tsx` using Clerk components.
+  - `app/(auth)/sign-in/[[...sign-in]]/page.tsx` and `app/(auth)/sign-up/[[...sign-up]]/page.tsx` using Clerk components.
   - Shared `app/(auth)/layout.tsx` two-panel layout: left logo + tagline + text feature list, right Clerk form (form-only on small screens).
   - `app/page.tsx` redirects authenticated users to `/editor` and unauthenticated users to `/sign-in`.
   - `UserButton` added to the editor navbar right section.

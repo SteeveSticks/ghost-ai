@@ -30,8 +30,9 @@ export function ProjectSidebar({
       />
       <aside
         aria-hidden={!isOpen}
+        inert={!isOpen}
         className={`fixed left-0 top-0 z-40 flex h-full w-[min(22rem,100vw)] flex-col border-r border-border bg-card shadow-2xl shadow-black/40 transition-transform duration-300 ${
-          isOpen ? "translate-x-0" : "-translate-x-full"
+          isOpen ? "translate-x-0" : "-translate-x-full pointer-events-none"
         }`}
       >
         <div className="flex h-14 items-center justify-between border-b border-border px-4">

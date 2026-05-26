@@ -3,7 +3,7 @@ Clerk is already installed and connected. Wire it into the Next.js app: Provider
 ## Design 
 Use Clerk's `dark` theme from `@clerk/ui/themes` as the base.
 
-Override Clerk apperance variables using the app's existing CSS variables. Do not hardcode colors.
+Override Clerk appearance variables using the app's existing CSS variables. Do not hardcode colors.
 
 ### Sign-in and Sign-up pages:
 
@@ -31,11 +31,11 @@ Define public routes using the existing sign-in and sign-up env vars. Protect ev
 Update `/`:
 
 - authenticated users redirects to `/editor`
-- unauthenticted users redirects to `/sign-in`
+- unauthenticated users redirects to `/sign-in`
 
 Add Clerk's built-in `UserButton` to the editor navbar right section for profile settings and logout.
 
-Keep Clerk's default user menu and profile flows intact. Do not rebuild or heavily customie Clerk internals
+Keep Clerk's default user menu and profile flows intact. Do not rebuild or heavily customi Clerk internals
 
 Use existing Clerk env vars. Do not rename or invent new ones.
 
