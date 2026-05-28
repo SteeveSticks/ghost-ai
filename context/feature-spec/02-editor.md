@@ -33,12 +33,12 @@ Requirements:
 
 ### Dialog Pattern
 
-Use the exsiting color token for `global.css` styling.
+Use the existing color token for `global.css` styling.
 
 Support:
 
 - title
-- discription
+- description
 - footer actions
 
 Do not build actual dialog yet
@@ -46,4 +46,4 @@ Do not build actual dialog yet
 # Check when done 
 - new component compile without typescript errors
 - no lint errors
-- dialog patten is ready for future use 
+- dialog pattern is ready for future use 

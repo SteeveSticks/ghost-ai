@@ -4,11 +4,11 @@ Update this file whenever the current phase, active feature, or implementation s
 
 ## Current Phase
 
-- Foundation — design system and UI primitives
+- Foundation — authentication and route protection
 
 ## Current Goal
 
-- Implement editor chrome components from `context/feature-spec/02-editor.md`.
+- Implement Clerk authentication from `context/feature-spec/03-auth.md`.
 
 ## Completed
 
@@ -21,17 +21,25 @@ Update this file whenever the current phase, active feature, or implementation s
   - `tw-animate-css` imported in `globals.css` to support shadcn animation utilities under Tailwind v4.
   - `npx tsc --noEmit` and `next build` both pass.
 
-## In Progress
-
 - 02-editor:
   - `component/editor/editor-navbar.tsx`
   - `component/editor/project-sidebar.tsx`
   - `component/editor/dialog-pattern.tsx`
-  - `app/page.tsx` integration for preview and validation
+  - Editor shell wired into `app/editor/page.tsx`.
+
+## In Progress
+
+- 03-auth:
+  - `proxy.ts` at project root using Clerk's `clerkMiddleware`.
+  - `ClerkProvider` wraps root layout with `@clerk/ui/themes` `dark` theme and CSS-variable appearance overrides.
+  - `app/(auth)/sign-in/[[...sign-in]]/page.tsx` and `app/(auth)/sign-up/[[...sign-up]]/page.tsx` using Clerk components.
+  - Shared `app/(auth)/layout.tsx` two-panel layout: left logo + tagline + text feature list, right Clerk form (form-only on small screens).
+  - `app/page.tsx` redirects authenticated users to `/editor` and unauthenticated users to `/sign-in`.
+  - `UserButton` added to the editor navbar right section.
 
 ## Next Up
 
-- Validate compile and lint, then continue with the next feature unit.
+- Run `npm run build` to confirm auth integration compiles, then continue with the next feature unit.
 
 ## Open Questions
 
