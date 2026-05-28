@@ -8,7 +8,7 @@ Update this file whenever the current phase, active feature, or implementation s
 
 ## Current Goal
 
-- Implement Clerk authentication from `context/feature-spec/03-auth.md`.
+- Implement editor project dialogs from `context/feature-spec/04-project-dialogs.md`.
 
 ## Completed
 
@@ -29,13 +29,11 @@ Update this file whenever the current phase, active feature, or implementation s
 
 ## In Progress
 
-- 03-auth:
-  - `proxy.ts` at project root using Clerk's `clerkMiddleware`.
-  - `ClerkProvider` wraps root layout with `@clerk/ui/themes` `dark` theme and CSS-variable appearance overrides.
-  - `app/(auth)/sign-in/[[...sign-in]]/page.tsx` and `app/(auth)/sign-up/[[...sign-up]]/page.tsx` using Clerk components.
-  - Shared `app/(auth)/layout.tsx` two-panel layout: left logo + tagline + text feature list, right Clerk form (form-only on small screens).
-  - `app/page.tsx` redirects authenticated users to `/editor` and unauthenticated users to `/sign-in`.
-  - `UserButton` added to the editor navbar right section.
+- 04-project-dialogs:
+  - editor home screen with create project call to action.
+  - project sidebar list with owned and shared projects.
+  - create, rename, delete dialogs wired with mock project data and loading state.
+  - live slug preview in create project dialog.
 
 ## Next Up
 
