@@ -8,9 +8,9 @@ const features = [
 
 const headings = [
   "AI Architecture Generation",
-  "Real-time Collaboaration",
-  "Instant Spec Generation"
-]
+  "Real-time Collaboration",
+  "Instant Spec Generation",
+];
 
 export default function AuthLayout({
   children,
@@ -29,22 +29,25 @@ export default function AuthLayout({
 
         <div className="space-y-6">
           <p className="text-balance text-2xl font-semibold leading-tight">
-            Design systems at the<br /> speed of thought.
+            Design systems at the
+            <br /> speed of thought.
           </p>
           <p className="text-md text-muted-foreground ">
-            Describe your architecture in plain English. Ghost AI maps it to a shared canvas your whole team can refine it in real time.
+            Describe your architecture in plain English. Ghost AI maps
+            it to a shared canvas your whole team can refine it in
+            real time.
           </p>
           <ul className="space-y-3 text-sm text-muted-foreground">
             {features.map((feature, index) => (
               <li key={feature} className="flex items-start gap-3">
                 <div className="flex gap-2">
-
-                <Check className="mt-0.5 size-4 shrink-0 text-brand" />
-                <div className="grid">
-
-                <h1 className="font-medium text-white text-md">{headings[index]}</h1>
-                <span>{feature}</span>
-                </div>
+                  <Check className="mt-0.5 size-4 shrink-0 text-brand" />
+                  <div className="grid">
+                    <h1 className="font-medium text-white text-md">
+                      {headings[index]}
+                    </h1>
+                    <span>{feature}</span>
+                  </div>
                 </div>
               </li>
             ))}
